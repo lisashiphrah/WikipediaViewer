@@ -10,16 +10,18 @@
 	<link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 <body>
+	<div ng-app="WikiApp" ng-controller="WikiController">
+		<h1>Wikipedia Viewer</h1>
+		<form ng-submit="search()">
+			<input type="text" ng-id="searchTxt" placeholder="type your search here"/>
 
-	<main ng-app="WikiApp" ng-controller="MainCtrl">
-		<div id="search" class="wrapper fullHeight">
-			<a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="white-text">Click here for a random article</a><br/>
-			<form ng-submit="search()">
-				<input type="text" ng-model="searchTxt"/>
-				<div class="eks"></div>
-			</form>
-			<p id="help" class="white-text">Click icon to search</p>
-		</div>
+			<button id='newSearch'>New Search</button>
+			
+			<a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+				<button>Random Article</button>
+			</a>
+		</form>
+		
 		<div class="wrapper">
 			<ul>
 				<a ng-href="{{result.page}}" target="_blank" ng-repeat="result in results">
@@ -30,6 +32,6 @@
 				</a>
 			</ul>
 		</div>
-	</main>
+	</div>
 </body>
 </html>
