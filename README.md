@@ -15,7 +15,7 @@ Wikipedia Viewer developed by me as Free Code Camp #3 Intermediate Front End Dev
   <li>You can get feedback on your project by sharing it with your friends on Facebook.</li>
 </ol>
 
-
+<img src="screenshot.png" />
 
 
 
