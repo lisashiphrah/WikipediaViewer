@@ -1,36 +1,95 @@
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,400);
-
-html {
-  font-family: "Work Sans", Tahoma, Sans-Serif;
-  color: #000;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
-  padding-top: 10px;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(15, 59, 105, 0.08);
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: Sans-Serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  /*background-color: rgba(15, 59, 105, 0.08);*/
   text-align: center;
 }
 
+header {
+  background:#000;
+  height:60px;
+  color:white;
+  margin-bottom: 30px;
+}
+
 h1 {
-  font-size: 3.5em;
-  font-weight: normal;
+  font-size: 2.0em;
+  line-height: 60px;
+}
+
+form {
+  margin-bottom: 20px;
 }
 
 form input[type="text"] {
   width: 600px;
-  padding: 5px;
+  height: 60px;
+  border-radius: 5px;
+  border:none;
+  padding: 0 20px;
+  font-family: "Galano Semibold", sans-serif;
+  font-weight: bold;
   font-size: 14px;
-  line-height: 38px;
+  color: rgba(14, 20, 26, 0.8);
+  background: rgba(14, 20, 26, 0.05)
 }
 
 form button {
   padding: 17px;
-  background: #331F82;
+  background: rgb(0,207,104);
   color: #fff;
   width: 160px;
   font-size: 16px;
-  border: none;
+  border-radius: 5px;
+  border:1px solid #0dc134;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: rgb(2,177,90);
 }
 
 ul {
@@ -61,9 +120,13 @@ ul li {
   -webkit-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
   -moz-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
   transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+
+  box-shadow: 0 2px 12px rgba(14, 20, 26, 0.49);
+  border-radius: 4px;
 }
+
 ul li:hover {
-  border-left: 5px solid #D96F32;
+  border: 1px solid #cecece;
   margin-left: -5px;
 }
 

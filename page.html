@@ -10,8 +10,11 @@
 	<link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 <body>
-	<div ng-app="WikiApp" ng-controller="WikiController">
+	<header>
 		<h1>Wikipedia Viewer</h1>
+	</header>
+	
+	<div ng-app="WikiApp" ng-controller="WikiController">
 		<form ng-submit="search()">
 			<input type="text" ng-id="searchTxt" placeholder="type your search here"/>
 
